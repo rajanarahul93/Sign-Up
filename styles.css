@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-family: 'Poppins', sans-serif;
+    gap:20px;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+:root{
+    --lord-icon-primary: #FFCC70;
+    --lord-icon-secondary: #C850C0;
+}
+
+.glass{
+    padding: 1.2rem;
+    background: transparent;
+    height: auto;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(12.6px);
+    backdrop-filter: blur(12.6px);
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    text-align: center;
+
+}
+
+.anim-icon{
+    height:100px;
+    display: flex;
+    width: 100%;
+}
+
+.default-title{
+    font-size: 20px;
+    color: white;
+}
+
+.default-input{
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.default-button{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+    cursor: pointer;
+}
+
+.default-button:active {
+    transform: translateY(1px);
+}
+
+
+.default-label{
+    font-size: 13px;
+    color: wheat;
+    cursor: pointer;
+}
+
+.default-footer{
+    font-size: 13px;
+    color: wheat;
+}
+
+@media only screen and (max-width: 500px) {
+    .glass{
+        width: 90%;
+    }
+}
